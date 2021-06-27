@@ -1,0 +1,15 @@
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ImportProducts.deps.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ImportProducts.runtimeconfig.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ImportProducts.runtimeconfig.dev.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ImportProducts.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ref/ImportProducts.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/ImportProducts.pdb
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.csproj.AssemblyReference.cache
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.AssemblyInfoInputs.cache
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.AssemblyInfo.cs
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.csproj.CoreCompileInputs.cache
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ref/ImportProducts.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.pdb
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.genruntimeconfig.cache
