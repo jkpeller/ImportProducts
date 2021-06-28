@@ -1589,6 +1589,20 @@
         "runtime": {
           "lib/netstandard2.1/YamlDotNet.dll": {}
         }
+      },
+      "ImportProducts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "YamlDotNet": "11.2.0"
+        },
+        "compile": {
+          "bin/placeholder/ImportProducts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ImportProducts.dll": {}
+        }
       }
     }
   },
@@ -5577,10 +5591,16 @@
         "yamldotnet.11.2.0.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
+    },
+    "ImportProducts/1.0.0": {
+      "type": "project",
+      "path": "../ImportProducts/ImportProducts.csproj",
+      "msbuildProject": "../ImportProducts/ImportProducts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ImportProducts >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Newtonsoft.Json >= 13.0.1",
       "YamlDotNet >= 11.2.0",
@@ -5606,7 +5626,7 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/jpellerin@ibm.com/.config/NuGet/NuGet.Config"
+        "/Users/jpellerin@ibm.com/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5617,7 +5637,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/ImportProducts.csproj": {
+              "projectPath": "/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/ImportProducts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

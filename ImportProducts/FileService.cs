@@ -11,8 +11,22 @@ namespace ImportProducts
     {
         public static SoftwareProduct LoadFromFile(string filePath)
         {
-            using StreamReader reader = new StreamReader(filePath);
-            string strContents = reader.ReadToEnd();
+            string strContents = string.Empty;
+            try
+            {
+                using StreamReader reader = new StreamReader(filePath);
+                strContents = reader.ReadToEnd();
+            }
+            catch (FileNotFoundException fnfe)
+            {
+                Console.WriteLine(fnfe.Message);
+                return null;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
 
             string extension = Path.GetExtension(filePath);
             switch (extension)
@@ -31,11 +45,11 @@ namespace ImportProducts
 
         public static SoftwareProduct ReadJSON(string contents)
         {
-            Console.WriteLine(contents);
+            //Console.WriteLine(contents);
             SoftwareProductJson softwareProductsJson = JsonConvert.DeserializeObject<SoftwareProductJson>(contents);
             if (softwareProductsJson != null && softwareProductsJson.Products.Length > 0)
             {
-                Console.WriteLine(softwareProductsJson.Products[0].Title);
+                //Console.WriteLine(softwareProductsJson.Products[0].Title);
                 return ConvertFromJsonFormat(softwareProductsJson);
             }
             return null;
@@ -43,7 +57,7 @@ namespace ImportProducts
 
         public static SoftwareProduct ReadYAML(string contents)
         {
-            Console.WriteLine(contents);
+            //Console.WriteLine(contents);
             var deserializer = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
             List<SoftwareProductsYaml> yamlList = deserializer.Deserialize<List<SoftwareProductsYaml>>(contents);
             if (yamlList != null && yamlList.Count > 0)
@@ -79,7 +93,7 @@ namespace ImportProducts
             List<Product> products = new List<Product>();
             foreach (SoftwareProductsYaml spy in yamlList)
             {
-                Console.WriteLine(spy.Name);
+                //Console.WriteLine(spy.Name);
                 Product product = new Product
                 {
                     Name = spy.Name,

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ImportProductsTests/1.0.0": {
         "dependencies": {
+          "ImportProducts": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "Newtonsoft.Json": "13.0.1",
           "YamlDotNet": "11.2.0",
@@ -975,7 +976,7 @@
         "runtime": {
           "lib/netstandard2.0/xunit.abstractions.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -1028,6 +1029,15 @@
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.2.0.0"
           }
+        }
+      },
+      "ImportProducts/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "YamlDotNet": "11.2.0"
+        },
+        "runtime": {
+          "ImportProducts.dll": {}
         }
       }
     }
@@ -1667,6 +1677,11 @@
       "sha512": "sha512-9PvAymQMmHAKSdzbUwlmZypyqTuz6AxYv7J1DcTSotKCsLwPxg69gH1fEHgGdbrNLDzJ6Q0W/jX+e10/fppbnw==",
       "path": "yamldotnet/11.2.0",
       "hashPath": "yamldotnet.11.2.0.nupkg.sha512"
+    },
+    "ImportProducts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

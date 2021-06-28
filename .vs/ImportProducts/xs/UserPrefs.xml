@@ -1,25 +1,31 @@
 ﻿<Properties StartupConfiguration="{BED30A06-DEA4-41CA-B9F3-F1D08599E272}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ImportProducts/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ImportProducts/DBService.cs">
     <Files>
-      <File FileName="ImportProducts/Program.cs" Line="57" Column="39" />
-      <File FileName="ImportProducts/SoftwareProducts.cs" Line="13" Column="1" />
-      <File FileName="ImportProducts/FileService.cs" Line="11" Column="6" />
-      <File FileName="ImportProducts/SoftwareProduct.cs" Line="11" Column="25" />
-      <File FileName="ImportProducts/DBService.cs" />
+      <File FileName="ImportProducts/Program.cs" Line="25" Column="14" />
+      <File FileName="ImportProducts/FileService.cs" Line="28" Column="29" />
+      <File FileName="ImportProductsTests/UnitTest1.cs" Line="31" Column="55" />
+      <File FileName="ImportProducts/DBService.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ImportProducts" expanded="True">
             <Node name="ImportProducts" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="DBService.cs" selected="True" />
             </Node>
-            <Node name="ImportProductsTests" expanded="True" />
+            <Node name="ImportProductsTests" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="ImportProducts" expanded="True" selected="True" />
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -27,7 +33,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/Program.cs" relfile="ImportProducts/Program.cs" line="37" column="29" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

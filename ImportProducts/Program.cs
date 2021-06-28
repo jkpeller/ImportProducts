@@ -15,7 +15,6 @@ namespace ImportProducts
             ProcessArguments(args);
 
             Console.WriteLine("Program exiting...");
-            Console.WriteLine(System.AppContext.BaseDirectory);
         }
 
         static void ProcessArguments(string[] args)
@@ -23,7 +22,7 @@ namespace ImportProducts
             SoftwareProduct softwareProduct = null;
             if (args.Length == 0)
             {
-                Console.WriteLine("Invalid Arguments");
+                Console.WriteLine("Not Enough Arguments");
             }
             else
             {
@@ -54,7 +53,8 @@ namespace ImportProducts
 
                 if(softwareProduct != null)
                 {
-                    DBService.Save(softwareProduct);
+                    bool result = DBService.Save(softwareProduct);
+                    if (result) Console.WriteLine("All products imported successfully!");
                 }
             }
         }

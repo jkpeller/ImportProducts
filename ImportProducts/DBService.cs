@@ -4,7 +4,7 @@ namespace ImportProducts
 {
     public static class DBService
     {
-        public static void Save(SoftwareProduct softwareProduct)
+        public static bool Save(SoftwareProduct softwareProduct)
         {
             if(softwareProduct.Products.Count > 0)
             {
@@ -12,7 +12,9 @@ namespace ImportProducts
                 {
                     Import(p);
                 }
+                return true;
             }
+            return false;
         }
 
         private static void Import(Product p)

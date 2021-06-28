@@ -98,3 +98,9 @@
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/obj/Debug/net5.0/ref/ImportProductsTests.dll
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/obj/Debug/net5.0/ImportProductsTests.pdb
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/obj/Debug/net5.0/ImportProductsTests.genruntimeconfig.cache
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/CoverletSourceRootsMapping
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/ImportProducts.deps.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/ImportProducts.runtimeconfig.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/ImportProducts.runtimeconfig.dev.json
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/ImportProducts.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProductsTests/bin/Debug/net5.0/ImportProducts.pdb

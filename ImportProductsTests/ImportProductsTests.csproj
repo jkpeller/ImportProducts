@@ -24,5 +24,12 @@
   <ItemGroup>
     <None Remove="YamlDotNet" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImportProducts\ImportProducts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>
