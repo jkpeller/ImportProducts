@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using System.Globalization;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace ImportProducts
 {
     public class SoftwareProductJson
     {
         [JsonProperty("products")]
-        public Product[] Products { get; set; }
+        public ProductJson[] Products { get; set; }
     }
 
-    public class Product
+    public class ProductJson
     {
         [JsonProperty("categories")]
         public string[] Categories { get; set; }

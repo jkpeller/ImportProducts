@@ -7,15 +7,23 @@ using YamlDotNet.Serialization.NamingConventions;
 
 namespace ImportProducts
 {
-    class Program
+    public class Program
     {
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            if(args.Length == 0)
+            ProcessArguments(args);
+
+            Console.WriteLine("Program exiting...");
+            Console.WriteLine(System.AppContext.BaseDirectory);
+        }
+
+        static void ProcessArguments(string[] args)
+        {
+            SoftwareProduct softwareProduct = null;
+            if (args.Length == 0)
             {
                 Console.WriteLine("Invalid Arguments");
-                return;
             }
             else
             {
@@ -24,64 +32,29 @@ namespace ImportProducts
                 {
                     case "capterra":
                     case "softwareadvice":
-                        if(args.Length > 1 && !string.IsNullOrEmpty(args[1]))
+                        if (args.Length > 1 && !string.IsNullOrEmpty(args[1]))
                         {
                             Console.WriteLine($"importing {command} products...");
                             string path = args[1];
-                            LoadFromFile(path);
+                            softwareProduct = FileService.LoadFromFile(path);
                         }
                         break;
+                    //case "getapp":
+                    //    if (args.Length > 1 && !string.IsNullOrEmpty(args[1]))
+                    //    {
+                    //        Console.WriteLine($"importing {command} products...");
+                    //        string urlPath = args[1];
+                    //        LoadFromURL(urlPath);
+                    //    }
+                    //    break;
                     default:
                         Console.WriteLine("Invalid command");
                         break;
                 }
-            }
 
-            Console.WriteLine("Program exiting...");
-            Console.WriteLine(System.AppContext.BaseDirectory);
-        }
-
-        static void LoadFromFile(string filePath)
-        {
-            using StreamReader reader = new StreamReader(filePath);
-            string strContents = reader.ReadToEnd();
-
-            string extension = Path.GetExtension(filePath);
-            switch (extension)
-            {
-                case ".yaml":
-                case ".yml":
-                    ReadYAML(strContents);
-                    break;
-                case ".json":
-                    ReadJSON(strContents);
-                    break;
-                default:
-                    Console.WriteLine("Unrecognized filetype");
-                    break;
-            }
-        }
-
-        static void ReadJSON(string contents)
-        {
-            Console.WriteLine(contents);
-            SoftwareProductJson softwareProducts = JsonConvert.DeserializeObject<SoftwareProductJson>(contents);
-            if(softwareProducts != null && softwareProducts.Products.Length > 0)
-            {
-                Console.WriteLine(softwareProducts.Products[0].Title);
-            }
-        }
-
-        static void ReadYAML(string contents)
-        {
-            Console.WriteLine(contents);
-            var deserializer = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance).Build();
-            List<SoftwareProductsYaml> yamlList = deserializer.Deserialize<List<SoftwareProductsYaml>>(contents);
-            if (yamlList != null && yamlList.Count > 0)
-            {
-                foreach(SoftwareProductsYaml spy in yamlList)
+                if(softwareProduct != null)
                 {
-                    Console.WriteLine(spy.Name);
+                    DBService.Save(softwareProduct);
                 }
             }
         }
