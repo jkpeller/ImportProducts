@@ -13,3 +13,6 @@
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ref/ImportProducts.dll
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.pdb
 /Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.genruntimeconfig.cache
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/bin/Debug/net5.0/YamlDotNet.dll
+/Users/jpellerin@ibm.com/Projects/ImportProducts/ImportProducts/obj/Debug/net5.0/ImportProducts.csproj.CopyComplete

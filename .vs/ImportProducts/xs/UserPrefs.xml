@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{BED30A06-DEA4-41CA-B9F3-F1D08599E272}|Default">
   <MonoDevelop.Ide.ItemProperties.ImportProductsTests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ImportProductsTests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ImportProducts/SoftwareProductsYaml.cs">
     <Files>
-      <File FileName="ImportProducts/Program.cs" Line="6" Column="6" />
-      <File FileName="ImportProductsTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="ImportProducts/Program.cs" Line="40" Column="10" />
+      <File FileName="ImportProducts/SoftwareProducts.cs" Line="11" Column="6" />
+      <File FileName="ImportProducts/SoftwareProductsYaml.cs" Line="12" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ImportProducts" expanded="True">
             <Node name="ImportProducts" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="SoftwareProductsYaml.cs" selected="True" />
             </Node>
-            <Node name="ImportProductsTests" expanded="True">
-              <Node name="Dependencies" selected="True" />
-            </Node>
+            <Node name="ImportProductsTests" expanded="True" />
           </Node>
         </State>
       </Pad>
