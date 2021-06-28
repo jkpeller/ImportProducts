@@ -7,7 +7,7 @@ using Newtonsoft.Json.Converters;
 
 namespace ImportProducts
 {
-    public class SoftwareProducts
+    public class SoftwareProductJson
     {
         [JsonProperty("products")]
         public Product[] Products { get; set; }
